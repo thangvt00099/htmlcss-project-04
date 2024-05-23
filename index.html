@@ -8,6 +8,15 @@
     <!-- Reset css -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Embeded font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,5 +65,96 @@
         </div>
       </div>
     </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <!-- Hero media -->
+          <div class="hero__media">
+            <div class="hero__img-wrap">
+              <img src="./assets/img/heroimg.png" alt="" class="hero__img" />
+
+              <!-- Decoration -->
+              <img
+                src="./assets/img/decoright.svg"
+                alt=""
+                class="hero__decor hero__decor-right"
+              />
+              <img
+                src="./assets/img/decorleft.svg"
+                alt=""
+                class="hero__decor hero__decor-left"
+              />
+            </div>
+
+            <div class="hero__img-wrap hero__img-wrap-small">
+              <img src="./assets/img/heroimg1.png" alt="" class="hero__img" />
+            </div>
+
+            <div class="hero__list">
+              <!-- Item 1 -->
+              <section class="hero-list-item">
+                <img
+                  src="./assets/img/skeleton1.svg"
+                  alt=""
+                  class="hero-list-item__thumb"
+                />
+                <div class="hero-list-item__info">
+                  <p class="hero-list-item__title">Pet Health</p>
+                  <div class="hero-list-item__skeleton"></div>
+                  <div
+                    class="hero-list-item__skeleton"
+                    style="--width: 39px"
+                  ></div>
+                </div>
+              </section>
+
+              <div class="hero-list-item__separate"></div>
+
+              <!-- Item 2 -->
+              <section class="hero-list-item">
+                <img
+                  src="./assets/img/skeleton2.svg"
+                  alt=""
+                  class="hero-list-item__thumb"
+                />
+                <div class="hero-list-item__info">
+                  <p class="hero-list-item__title">Pet care</p>
+                  <div class="hero-list-item__skeleton"></div>
+                  <div
+                    class="hero-list-item__skeleton"
+                    style="--width: 39px"
+                  ></div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- Hero content -->
+          <section class="hero__content">
+            <h1 class="heading hero__heading">
+              Established & Trusted Pet Care Service
+            </h1>
+            <p class="desc hero__desc">
+              Discover a wide variety of Pawsitive services to choose from,
+              including daycare, private walks, office duty and spa.
+            </p>
+            <div class="hero__content-act"></div>
+
+            <div class="hero__row">
+              <a href="#!" class="btn hero__cta-btn">
+                Book a Meet
+                <span class="btn__icon">
+                  <i class="fa-solid fa-angle-right"></i>
+                </span>
+              </a>
+
+              <a href="#!" class="hero__cta-link">Schedule a Call</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
