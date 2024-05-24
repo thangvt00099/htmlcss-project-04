@@ -279,3 +279,146 @@ a {
 	line-height: 1; /* 100% */
 	text-decoration-line: underline;
 }
+
+/* About */
+.about {
+	margin-top: 138px;
+}
+
+.about__inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+
+.about__label {
+	margin-bottom: 15px;
+	color: #5E6085;
+	font-family: Sora;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1; /* 100% */
+}
+
+.about__heading {
+	width: 446px;
+	margin-bottom: 24px;
+}
+
+.about__desc {
+	width: 431px;
+	margin-bottom: 54px;
+}
+
+.about__checklist {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: flex-start;
+	gap: 34px 36px;
+}
+
+.about__checklist-item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	color: #48496A;
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1; /* 100% */
+	cursor: pointer;
+}
+
+.about__checklist-item::before {
+	content: "";
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: #FF5D31;
+	border-radius: 4px;
+	/* box-shadow: 0px 5px 15px -3px rgba(255,93,49,0.69); */
+}
+
+.about__checklist-item:hover::before {
+	box-shadow: 0px 5px 15px -3px rgba(255,93,49,0.69);
+}
+
+.about__checklist-item::after {
+	content: url(../img/check.svg);
+	position: absolute;
+    top: 2px;
+    left: 5px;
+}
+
+.about__media {
+	position: relative;
+}
+
+.about__card {
+	position: absolute;
+	top: 157px;
+	left: 0;
+	width: 136px;
+	height: 156px;
+	padding: 31px 26px;
+	border-radius: 10px;
+	background: #5BD6E2;
+	box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+	text-align: center;
+}
+
+.about__card-title {
+	display: inline-block;
+	margin-bottom: 14px;
+	font-family: Sora;
+	font-size: 4.2rem;
+	font-weight: 700;
+	line-height: 1; /* 100% */
+	color: #FFF;
+}
+
+.about__card-desc {
+	width: 83px;
+	color: #C6F4F9;
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.4; /* 142.857% */
+}
+
+.about__card-decor {
+	position: absolute;
+    top: -38px;
+    right: -32px;
+}
+
+.about__img-wrap {
+	position: relative;
+	width: 494px;
+	margin-left: auto;
+}
+
+
+.about__img-wrap::after {
+	position: absolute;
+	inset: auto 0 0 0;
+	content: "";
+	z-index: -1;
+	height: 336px;
+	border-radius: 16px;
+	background: linear-gradient(180deg, #FCE0EF 0%, #FAC3D1 100%);	
+}
+
+.about__img {
+	display: block;
+	width: 450px;
+	margin: 0 auto;
+}
+
+.about__media-decor {
+	position: absolute;
+	z-index: -1;
+    top: 148px;
+    right: -50px;
+}
+
+
