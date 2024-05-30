@@ -809,3 +809,80 @@ a {
 	box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
 
+/* Pricing */
+.pricing {
+	margin-top: 130px;
+	padding: 86px 0;
+	background: #FFF6ED;
+}
+
+.pricing__heading,
+.pricing__desc {
+	text-align: center;
+}
+
+.pricing__desc {
+	margin: 24px auto 38px;
+	width: 709px;
+	color: #656689;
+}
+
+.pricing__switch-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.pricing__switch-label {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 276px;
+	height: 56px;
+	border-radius: 31px;
+	border: 1px solid #ff5b2e99;
+	user-select: none;
+	cursor: pointer;
+}
+
+.pricing__switch-label::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 100%;
+	border-radius: inherit;
+	background: #FF5B2E;
+}
+
+.pricing__switch-value {
+	position: relative;
+	z-index: 1;
+	color: #FFF;
+	font-size: 1.6rem;
+	font-weight: 500;
+	line-height: 1; /* 100% */
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+	width: 131px;
+	left: auto;
+	right: 0;
+}
+
+.pricing__switch-input:not(:checked) + .pricing__switch-label .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked + .pricing__switch-label .pricing__switch-value:nth-of-type(1) {
+	color: #FF5B2E;
+}
+
+.pricing__switch-inner {
+	position: relative;
+}
+
+.pricing__sale-off {
+	position: absolute;
+	top: -10px;
+    right: -112px;
+}
+
